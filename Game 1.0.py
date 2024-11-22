@@ -35,3 +35,23 @@ def check_winner(board, player):
     # Beraberlik kontrolü
 def check_draw(board):
     return all(cell != " " for row in board for cell in row)
+# Ana oyun fonksiyonu
+def tic_tac_toe():
+    board = [[" " for _ in range(3)] for _ in range(3)]
+    players = ["X", "O"]
+    print("Tic-Tac-Toe Oyununa Hoş Geldiniz!")
+    print_board(board)
+    
+    for turn in range(9):  # Maksimum 9 hamle
+        player = players[turn % 2]
+        player_move(board, player)
+        print_board(board)
+        if check_winner(board, player):
+            print(f"Tebrikler! Player {player} kazandı!")
+            return
+        if check_draw(board):
+            print("Oyun berabere!")
+            return
+    
+    print("Oyun berabere bitti!")
+
