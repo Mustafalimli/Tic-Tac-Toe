@@ -69,3 +69,5 @@ def tic_tac_toe_fifo():
                 print(f"Congratulations! {name} ({symbol}) wins!")
                 return
             print("The game continues...")
+ # Start the game
+tic_tac_toe_fifo()
