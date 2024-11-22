@@ -55,3 +55,5 @@ def tic_tac_toe():
     
     print("Oyun berabere bitti!")
 
+# Oyunu başlat
+tic_tac_toe()
