@@ -47,4 +47,25 @@ def tic_tac_toe_fifo():
     # Get player names
     player1_name = input("Enter the name of Player 1: ")
     player2_name = input("Enter the name of Player 2: ")
+    # X and O selection
+    x_player_name = input(f"{player1_name} and {player2_name}, who will be X? (Enter name): ").strip()
+    if x_player_name == player1_name:
+        players = {"X": player1_name, "O": player2_name}
+    elif x_player_name == player2_name:
+        players = {"X": player2_name, "O": player1_name}
+    else:
+        print("Invalid selection! X is automatically assigned to Player 1.")
+        players = {"X": player1_name, "O": player2_name}
     
+    board = [[" " for _ in range(3)] for _ in range(3)]
+    moves = {"X": [], "O": []}  # Tracks each player's moves
+    print_board(board)
+    
+    while True:
+        for symbol, name in players.items():
+            player_move(board, symbol, moves, name)
+            print_board(board)
+            if check_winner(board, symbol):
+                print(f"Congratulations! {name} ({symbol}) wins!")
+                return
+            print("The game continues...")
