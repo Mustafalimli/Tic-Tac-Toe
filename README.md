@@ -14,9 +14,9 @@ Key Features:
 1. Player Name Input:
    - At the beginning of the game, both players are prompted to enter their names, personalizing the game experience.
 
-2. Symbol Selection**:
-   - The program allows players to choose their preferred symbol (**X** or **O**) at the start of the game. 
-   - If a player enters an invalid name during selection, the program automatically assigns **X** to Player 1 and **O** to Player 2.
+2. Symbol Selection:
+   - The program allows players to choose their preferred symbol (X or O) at the start of the game. 
+   - If a player enters an invalid name during selection, the program automatically assigns X to Player 1 and O to Player 2.
 
 3. Dynamic FIFO Gameplay:
    - Each player can only have a maximum of three pieces on the board at any given time.
@@ -31,17 +31,17 @@ Key Features:
    - During each turn, players are asked to make their moves by choosing a number between 1 and 9, corresponding to the position on the board.
    - The board is displayed after each turn, showing the current game state.
 
-6. **Error Handling**:
+6. Error Handling:
    - The program prevents players from choosing already occupied spaces.
    - It handles invalid inputs gracefully, asking players to try again if they make a mistake.
 
 ---
 
-### How the Game Works:
+How the Game Works:
 
 1. Game Setup:
    - The program starts by welcoming the players and asking them to enter their names.
-   - Players then select who will use the **X** symbol. The other player is automatically assigned the **O** symbol.
+   - Players then select who will use the X symbol. The other player is automatically assigned the O symbol.
 
 2. Taking Turns:
    - Players take turns making moves by selecting a position on the 3x3 grid (numbered 1-9).
@@ -66,7 +66,7 @@ Example Gameplay:
 1. Player Setup:
    - Player 1: Alice
    - Player 2: Bob
-   - Alice chooses to play as X, and Bob plays as **O**.
+   - Alice chooses to play as X, and Bob plays as O.
 
 2. Initial Moves:
    - Alice places X in position 1.
@@ -75,7 +75,7 @@ Example Gameplay:
 
 3. FIFO in Action:
    - Alice places her fourth X in position 3.
-   - The oldest **X** (in position 1) is automatically removed.
+   - The oldest X (in position 1) is automatically removed.
 
 4. Winning the Game:
    - Bob places O in position 6, completing a row of three O symbols.
@@ -88,4 +88,4 @@ Customization Opportunities:
 - Expand the grid size for more complex games.
 - Introduce adjustable rules, such as allowing more pieces on the board or changing the win condition.
 
-This implementation makes Tic-Tac-Toe engaging and fun by ensuring continuous play while maintaining fair and logical rules. Enjoy the infinite possibilities of this classic game with a modern twist! 😊
+This implementation makes Tic-Tac-Toe engaging and fun by ensuring continuous play while maintaining fair and logical rules. Enjoy the infinite possibilities of this classic game with a modern twist! 
