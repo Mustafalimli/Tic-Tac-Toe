@@ -27,3 +27,24 @@ def player_move(board, player, moves, player_name):
                 print("This square is already occupied. Choose another one!")
         except ValueError:
             print("Please enter a valid number!")
+# Function to check for a winner
+def check_winner(board, player):
+    # Check rows, columns, and diagonals
+    for row in board:
+        if all(cell == player for cell in row):
+            return True
+    for col in range(3):
+        if all(board[row][col] == player for row in range(3)):
+            return True
+    if all(board[i][i] == player for i in range(3)) or all(board[i][2 - i] == player for i in range(3)):
+        return True
+    return False
+
+# Main game function
+def tic_tac_toe_fifo():
+    print("Welcome to Tic-Tac-Toe!")
+    
+    # Get player names
+    player1_name = input("Enter the name of Player 1: ")
+    player2_name = input("Enter the name of Player 2: ")
+    
