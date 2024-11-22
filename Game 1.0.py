@@ -1,5 +1,7 @@
-# Function to display the game board
 def print_board(board):
+    """
+    Function to display the game board
+    """
     for row in board:
         print(" | ".join(row))
         print("-" * 9)
