@@ -66,24 +66,24 @@ Example Gameplay:
 1. Player Setup:
    - Player 1: Alice
    - Player 2: Bob
-   - Alice chooses to play as **X**, and Bob plays as **O**.
+   - Alice chooses to play as X, and Bob plays as **O**.
 
 2. Initial Moves:
-   - Alice places **X** in position 1.
-   - Bob places **O** in position 5.
-   - Alice places **X** in position 2.
+   - Alice places X in position 1.
+   - Bob places O in position 5.
+   - Alice places X in position 2.
 
 3. FIFO in Action:
-   - Alice places her fourth **X** in position 3.
+   - Alice places her fourth X in position 3.
    - The oldest **X** (in position 1) is automatically removed.
 
-4. **Winning the Game**:
-   - Bob places **O** in position 6, completing a row of three **O** symbols.
+4. Winning the Game:
+   - Bob places O in position 6, completing a row of three O symbols.
    - The program announces Bob as the winner.
 
 ---
 
-### Customization Opportunities:
+Customization Opportunities:
 - Add an AI opponent for single-player mode.
 - Expand the grid size for more complex games.
 - Introduce adjustable rules, such as allowing more pieces on the board or changing the win condition.
